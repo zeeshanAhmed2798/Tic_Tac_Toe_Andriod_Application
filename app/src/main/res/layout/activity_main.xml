@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/wood"
+    tools:context=".MainActivity">
+    <TextView
+
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe "
+        android:textSize="32sp"
+        android:background="#0ED7F1"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+
+    </TextView>
+    <Button
+
+        android:backgroundTint="@color/white"
+        android:layout_height="70dp"
+        android:layout_width="110dp"
+        android:textColor="@color/black"
+        android:id="@+id/turn"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text=" "
+        ></Button>
+<Button
+
+    android:drawableBottom="@drawable/baseline_restart_alt_24"
+    android:drawableTint="@color/black"
+    android:layout_marginTop="40dp"
+    android:layout_toRightOf="@id/turn"
+    android:layout_below="@id/name"
+    android:id="@+id/restart"
+    android:backgroundTint="@color/white"
+    android:layout_width="40dp"
+    android:layout_marginLeft="50dp"
+    android:layout_height="35dp"></Button>
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="3">
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/btn1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:onClick="chechk"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            >
+        </Button>
+        <Button
+            android:layout_marginTop="12dp"
+            android:id="@+id/btn2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:id="@+id/btn3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:id="@+id/btn7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:id="@+id/btn8"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:onClick="chechk"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_marginTop="12dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:layout_marginLeft="10dp"
+            android:onClick="chechk"></Button>
+
+
+    </GridLayout>
+    <Button
+        android:id="@+id/result"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/grid_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:visibility="invisible"
+        ></Button>
+
+
+</RelativeLayout>
